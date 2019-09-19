@@ -1,10 +1,10 @@
-sudo: requried
+sudo: required
 services:
   - docker
 
 script:
-  - docker bulid -t hemanshi163/node .
-  - docker images hemanshi163/node
+  - docker build -t hemanshi163/node .
+  - docker images hemanshi163/node
 
 before_deploy:
   - docker login -u hemanshi163 -p Cpp@123
